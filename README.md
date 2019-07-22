@@ -42,7 +42,7 @@ start_react_project.sh
 
 ## Built With
 
-* [jq](https://stedolan.github.io/jq/) - The web framework used
+* [jq](https://stedolan.github.io/jq/) - command-line JSON processor
 
 ## Contributing
 
