@@ -9,7 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 Prerequisites are needed for some of the scripts:
 - MacOS
-- jq 
+- Yarn
+- jq
 
 ```bash
 brew install jq
@@ -50,7 +51,7 @@ Be my gues to start an issue or make a pull request with your contributions
 
 ## Authors
 
-* **Sebastián Linares** 
+* **Sebastián Linares**
 
 ## License
 
