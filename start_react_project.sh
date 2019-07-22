@@ -12,6 +12,7 @@ yarn create react-app $name
 
 # Install packages
 yarn add eslint prettier -D
+yarn add prettier-eslint-cli -D
 yarn add eslint-plugin-prettier eslint-config-prettier -D
 yarn add husky lint-staged -D
 yarn add @commitlint/cli -D
