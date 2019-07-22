@@ -1,4 +1,7 @@
 #!/bin/bash
+# Generates a React project with all the linting and formatting configuration. Ready to start coding.
+# The final step is eslint --init, the only step you need to input your preferences.
+
 
 # Get user name of the project
 echo Name of your project?
@@ -10,9 +13,9 @@ yarn create react-app $name
 # Install packages
 yarn add eslint prettier -D
 yarn add eslint-plugin-prettier eslint-config-prettier -D
-yarn add husky lint-staged
-yarn add @commitlint/cli
-yarn add @commitlint/config-conventional
+yarn add husky lint-staged -D
+yarn add @commitlint/cli -D
+yarn add @commitlint/config-conventional -D
 
 # Create .prettierrc
 
@@ -45,6 +48,10 @@ jq '.lint-staged += {
        "git add"
       ]
   }' package.json > temp.txt && mv temp.txt package.json
+
+# Create commitlint.config.js
+echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commitlint.config.js
+
 
 # create .eslintrc
 eslint --init
