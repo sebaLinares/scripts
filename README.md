@@ -1,5 +1,5 @@
-# Project Title
-Personal scripts
+# Personal scripts
+A bunch of scripts to never worry about tedious tasks again.
 
 
 ## Getting Started
