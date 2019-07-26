@@ -56,3 +56,16 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commit
 
 # create .eslintrc
 eslint --init
+
+# Add rules to .eslintrc
+jq '.rules += {
+"react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+  }' .eslintrc.json > tmp.txt && mv tmp.txt .eslintrc.json
