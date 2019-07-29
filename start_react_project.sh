@@ -17,6 +17,7 @@ yarn add eslint-plugin-prettier eslint-config-prettier -D
 yarn add husky lint-staged -D
 yarn add @commitlint/cli -D
 yarn add @commitlint/config-conventional -D
+yarn add babel-eslint -D
 
 # Create .prettierrc
 
@@ -69,3 +70,6 @@ jq '.rules += {
       }
     ],
   }' .eslintrc.json > tmp.txt && mv tmp.txt .eslintrc.json
+
+# Add babel-eslint to "parser" in .eslintrc
+jq '.parser += "babel-eslint"' .eslintrc.json > temp.txt && mv temp.txt .eslintrc.json
