@@ -15,5 +15,8 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "eslint-utils": "^1.4.2"
   }
 }
